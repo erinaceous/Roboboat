@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/cameraSurface"
+        android:layout_width="1px"
+        android:layout_height="1px" />
+
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="forceQuit"
+        android:text="Force Quit (Kill all threads)" />
+
+    <SeekBar
+        android:id="@+id/sailDirection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="180"
+        android:progress="90" />
+
+    <TextView
+        android:id="@+id/console"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:text="Boat Status"
+        android:typeface="monospace" />
+
+</LinearLayout>
